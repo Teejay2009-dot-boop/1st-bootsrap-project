@@ -1,0 +1,284 @@
+@media (min-width: 768px) {
+  width: 50%;
+}
+
+body::before {
+  content: " ";
+  height: 60px;
+  display: block;
+  color: transparent;
+}
+
+.card {
+  box-shadow: 0px 0px 2px black;
+}
+
+#react {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+#learn {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#questions {
+  font-weight: 700;
+}
+
+#noname {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#name {
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 20px;
+}
+
+.neon-text {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1b0288, 0 0 20px #ff00cc,
+    0 0 25px #ff00cc;
+  transition: all 0.7s ease-in-out;
+}
+
+.neon-text:hover {
+  box-shadow: 0 0 10px #fff, 0 0 20px #ff00cc, 0 0 30px #1b0288,
+    0 0 40px #ff00cc;
+}
+
+.input-box {
+  box-shadow: 2px 0px 5px black;
+}
+
+.input-box:hover {
+}
+
+/* Button style */
+#button {
+  padding: 12px 24px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#button:hover {
+  background-color: rgb(44, 95, 235);
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+.text-warning {
+  font-size: rem;
+}
+
+@media (min-width: 768px) {
+  .fade-in-section {
+    opacity: 1;
+  }
+  .fade-in-section.visible {
+    opacity: 1;
+  }
+}
+
+#sliding-undeline:hover {
+  color: white;
+}
+/* 
+#sliding-underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ff6347;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+} */
+
+.sliding-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.btn {
+  padding: 12px 24px;
+  background-color: rgba(36, 35, 35, 0.781);
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+.btncard {
+  padding: 12px 24px;
+  background-color: whitesmoke;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btncard:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+.btncard-react {
+  padding: 12px 24px;
+  background-color: whitesmoke;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btncard-react:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+.btnlink {
+  padding: 0px 20px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  text-align: start;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btnlink:hover {
+  background-color: transparent;
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+#pulse {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  animation: pulse 1.5s infinite;
+}
+
+#pulse:hover {
+  background-color: #3498db;
+  transform: translateY(-10px); /* Slight lift effect */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  #typing {
+    font-size: 3em;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    overflow: hidden;
+    border-right: 0.15em solid #000;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 5s steps(30) forwards, blink 0.75s step-end infinite;
+  }
+
+  @keyframes typing {
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+      color: transparent;
+    }
+  }
+}
+
+#typing-news {
+  font-size: 1.5em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  overflow: hidden;
+  border-right: 0.15em solid #000;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 5s steps(30) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (min-width: 920px) {
+  #typing {
+    font-size: 4em;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    overflow: hidden;
+    border-right: 0.15em solid #000;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 5s steps(30) forwards, blink 0.75s step-end infinite;
+  }
+
+  @keyframes typing {
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+}
